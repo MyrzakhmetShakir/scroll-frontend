@@ -41,7 +41,7 @@ function Image() {
         setScreen([]);
         setLoad(false)
         axios
-            .post('/post', inp)
+            .post('https://scroll-api.onrender.com/post', inp)
             .then(response=>{
                 setPhotoes([...response.data])
                 for(let i=0; i<15; i++) {
